@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddClient">
+   <children>
+      <SplitPane dividerPositions="0.4919678714859438" prefHeight="400.0" prefWidth="500.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ListView fx:id="all_clients" layoutX="-56.0" layoutY="28.0" prefHeight="370.0" prefWidth="242.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="28.0" />
+                  <Label layoutX="91.0" layoutY="6.0" text="Client Log">
+                     <font>
+                        <Font name="Verdana" size="12.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.30808080808080807" layoutX="4.0" layoutY="99.0" orientation="VERTICAL" prefHeight="398.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: coral;">
+                           <children>
+                              <TextField fx:id="client_message" layoutX="14.0" layoutY="21.0" prefHeight="25.0" prefWidth="220.0" promptText="Message" />
+                              <Button fx:id="send_button" layoutX="191.0" layoutY="47.0" mnemonicParsing="false" onAction="#send_message" text="Send" />
+                              <CheckBox fx:id="select_all" layoutX="14.0" layoutY="51.0" mnemonicParsing="false" text="Select All" />
+                              <MenuButton fx:id="select_clients" layoutX="14.0" layoutY="80.0" mnemonicParsing="false" text="Select Clients" />
+                              <Label fx:id="client_num_text" layoutX="15.0" layoutY="3.0" prefHeight="8.0" prefWidth="80.0" text="Client">
+                                 <font>
+                                    <Font name="Verdana" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <ListView fx:id="client_messages" layoutX="14.0" layoutY="24.0" prefHeight="247.0" prefWidth="248.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="24.0" />
+                              <Label layoutX="107.0" layoutY="5.0" text="Online" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</Pane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="450.0" style="-fx-background-color: coral;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StartServer">
+   <children>
+      <Button fx:id="start" layoutX="113.0" layoutY="159.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#start_server" prefHeight="60.0" prefWidth="91.0" text="Start Server" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Verdana" size="15.0" />
+         </font></Button>
+      <Button fx:id="add_client" layoutX="241.0" layoutY="159.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#create_new_client" prefHeight="60.0" prefWidth="91.0"  text="Add Client" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Verdana" size="15.0" />
+         </font></Button>
+   </children>
+</Pane>
